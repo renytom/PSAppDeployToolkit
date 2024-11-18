@@ -1,5 +1,56 @@
 // PSAppDeployToolkit default settings to ensure consistent code formatting and file encoding
 {
+    "files.exclude": {
+        ".exe":true,
+        ".msi":true,
+        ".editorconfig": true,
+        ".gitattributes": true,
+        ".github":true,
+        "PSAppDeployToolkit.pdf": true,
+        "CHANGELOG.txt": true,
+        "License":true,
+        "mkdocs.yml":true,
+        "README.md":true,
+        "LICENSE":true,
+        "COPYING.Lesser":true,
+        "AppDeployToolkitLogo.png":true,
+        "Sources":true,
+        "material":true,
+        "Testing":true,
+        "wiki":true,
+        "docs":true,
+        "Examples":true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+
+    "terminal.integrated.profiles.windows": {
+        "PowerShell PADT": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                //"${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+            ],
+            "args": [
+                "-NoLogo",
+                "-NoExit",
+                "-ExecutionPolicy",
+                "RemoteSigned",
+                "Import-Module oh-my-posh;Set-Theme qwerty"
+            ],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
     //-------- Indentation configuration --------
     "editor.detectIndentation": true,
     "editor.formatOnPaste": true,
