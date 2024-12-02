@@ -101,7 +101,7 @@ Try {
 		Set-ExecutionPolicy -ExecutionPolicy 'ByPass' -Scope 'Process' -Force -ErrorAction 'Stop'
 	} Catch {
 	}
-}
+
 
 	##*===============================================
 	##* VARIABLE DECLARATION
