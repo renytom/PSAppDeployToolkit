@@ -1,9 +1,9 @@
 ﻿<#
 .SYNOPSIS
-    Install RSAT features for Windows 10 1809 or 1903 or 1909 or 20H2 or 21H1.
+    Install RSAT features for Approved Windows OS.
 
 .DESCRIPTION
-    Install RSAT features for Windows 10 1809 or 1903 or 1909. All features are installed online from Microsoft Update thus the script requires Internet access
+    Install RSAT features for Windows 10 22H2 or Windows 11 23H2/24H2. All features are installed online from Microsoft Update thus the script requires Internet access
 
 .PARAM All
     Installs all the features within RSAT. This takes several minutes, depending on your Internet connection
@@ -18,7 +18,6 @@
     Uninstalls all the RSAT features
 
 .NOTES
-    Filename: Install-RSATv1809v1903v1909.ps1
     Version: 1.2
     Author: Martin Bengtsson
     Blog: www.imab.dk
@@ -32,6 +31,7 @@
               Added test for configuration of local WSUS by Group Policy.
                 - If local WSUS is configured by Group Policy, history shows that additional settings might be needed for some environments
     1.3   -   Now using Get-CmiInstance instead of Get-WmiObject for determining OS buildnumber
+    1.4   -   Updated the Windows version to reflect Microsoft supported versions. 3/12/2024 - Reny Thomas
 
 #>
 
