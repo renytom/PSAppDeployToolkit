@@ -37,7 +37,6 @@
                 "-NoExit",
                 "-ExecutionPolicy",
                 "RemoteSigned",
-                "oh-my-posh;Set-Theme qwerty"
             ],
         },
         "Command Prompt": {
@@ -50,7 +49,7 @@
                 "-NoExit",
                 "-ExecutionPolicy",
                 "RemoteSigned",
-                "Import-Module oh-my-posh;Set-Theme qwerty"
+                //"Import-Module oh-my-posh;Set-Theme qwerty"
             ],
             "icon": "terminal-cmd"
         },
@@ -85,5 +84,7 @@
     "powershell.powerShellDefaultVersion": "Windows PowerShell (x64)",
     "powershell.scriptAnalysis.settingsPath": ".\\.vscode\\PSScriptAnalyzerSettings.psd1",
     "dotnet.preferCSharpExtension": true,
-    "python.analysis.aiCodeActions": {}
+    "python.analysis.aiCodeActions": {},
+    "github.copilot.chat.edits.enabled": false,
+    "github.copilot.chat.codeGeneration.useInstructionFiles": false
 }
